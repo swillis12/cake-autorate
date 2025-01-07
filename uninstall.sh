@@ -37,7 +37,7 @@ main() {
 	done
 
 	# Check if OS is ASUSWRT-Merlin
-	if [ "$(uname -o)" = "ASUSWRT-Merlin" ]
+	if [ "$(uname -o)" = "ASUSWRT-Merlin" ] || [ "$(uname -o)" = "Tomato" ]
 	then
 		MY_OS=asuswrt
 		[ -z "${SCRIPT_PREFIX}" ] && SCRIPT_PREFIX=/jffs/scripts/cake-autorate

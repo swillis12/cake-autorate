@@ -54,7 +54,7 @@ main() {
 	done
 
 	# Check if OS is ASUSWRT-Merlin
-	if [ "$(uname -o)" = "ASUSWRT-Merlin" ]
+	if [ "$(uname -o)" = "ASUSWRT-Merlin" ] || [ "$(uname -o)" = "Tomato" ]
 	then
 		MY_OS=asuswrt
 		[ -z "${SCRIPT_PREFIX}" ] && SCRIPT_PREFIX=/jffs/scripts/cake-autorate
@@ -64,7 +64,7 @@ main() {
 	# If we are not running on OpenWRT or ASUSWRT-Merlin, exit
 	if [ "${MY_OS}" = "unknown" ]
 	then
-		printf "This script requires OpenWrt or ASUSWRT-Merlin\n" >&2
+		printf "This script requires OpenWrt, ASUSWRT-Merlin, or Tomato\n" >&2
 		return 1
 	fi
 
