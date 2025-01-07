@@ -2,7 +2,7 @@
 
 # Uninstall script for cake-autorate
 #
-# See https://github.com/lynxthecat/cake-autorate for more details
+# See https://github.com/swillis12/cake-autorate for more details
 
 # This needs to be encapsulated into a function so that we are sure that
 # sh reads all the contents of the shell file before we potentially erase it.

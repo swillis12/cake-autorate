@@ -5,7 +5,7 @@
 
 # Installation script for cake-autorate
 #
-# See https://github.com/lynxthecat/cake-autorate for more details
+# See https://github.com/swillis12/cake-autorate for more details
 
 # This needs to be encapsulated into a function so that we are sure that
 # sh reads all the contents of the shell file before we potentially erase it.
@@ -21,7 +21,7 @@ main() {
 
 	# Set up remote locations and branch
 	BRANCH="${CAKE_AUTORATE_BRANCH:-${2-master}}"
-	REPOSITORY="${CAKE_AUTORATE_REPO:-${1-lynxthecat/cake-autorate}}"
+	REPOSITORY="${CAKE_AUTORATE_REPO:-${1-swillis12/cake-autorate}}"
 	SRC_DIR="https://codeload.github.com/${REPOSITORY}/tar.gz"
 	API_URL="https://api.github.com/repos/${REPOSITORY}/commits/${BRANCH}"
 	DOC_URL="https://github.com/${REPOSITORY}/tree/${BRANCH}#installation-on-openwrt"
